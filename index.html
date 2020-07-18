@@ -3,6 +3,8 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -62,8 +64,6 @@
                     </td>
                     <td>
                         <image class="desktopView" src="icons/desktop_lot450.png"></image>
-                    </td>
-                    <td>
                         <image class="mobileView" src="icons/smartphone_lot450.png"></image>
                     </td>
                     <td>
@@ -148,14 +148,19 @@
             document.body.removeChild(dummy);
         }
 
+
+
+
         $('#designButton').click(function () {
+            var offsetHeight = document.getElementById('programmingPage').offsetHeight;
+            
             $('#programmingPage').css({
-                'transform': 'translate(0, -584px)',
+                'transform': 'translate(0, -100%)',
                 'transition': '-webkit-transform 1.8s ease',
             });
 
             $('#header').css({
-                'transform': 'translate(0, -584px)',
+                'transform': `translate(0, -${offsetHeight}px)`,
                 'transition': '-webkit-transform 1.8s ease',
             });
 

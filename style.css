@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
+@media only screen and (max-height: 794px) {
+    #devIcons {
+        padding-top: 20px;
+    }
+    body {
+        width:85vw;
+    }
+  }
+
+@media only screen and (min-height: 795px) {
+        #devIcons {
+            padding-top: 50px;
+        }
+        body {
+            width:70vw;
+        }
+    }
+
+
 body {
     margin: 0;
-    width:1000px;
     margin:auto;
+    overflow: hidden;
 }
 
 p {
@@ -78,7 +97,6 @@ a {
 	width: 748px;
 	text-align: justify;
 	z-index: -1;
-	padding-top: 50px;
 }
 
 #devIcons:after {
@@ -147,14 +165,18 @@ a {
 
 #designPage table {
     margin:auto;
+    width:100%;
+    padding-top:10px;
 }
 
 .desktopView {
-	height: 55vh;
+    float: left;
+    width:74%;
 }
 
 .mobileView {
-	height: 55vh;
+    float: left;
+    width: 26%;
 }
 
 #designButton {
@@ -190,14 +212,14 @@ a {
 }
 
 .arrow {
-	width: 55px;
+    width: 35px;
+    height:205px;
 	padding: 5px;
 	margin-top: -60px;
 	opacity: 0.4;
 }
 
 .arrow:hover {
-	width: 55px;
 	opacity: 0.6;
 }
 

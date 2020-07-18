@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+a {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+}
+
+body {
+	margin:0;
+	background-image:url("images/bg.png");
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-width:320px;
+}
+
+#mobileheader {
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+#mobileheader p{
+	text-align:center;
+	padding:5px;
+	background-color:646260;
+	border-width:2px;
+	border-color:a8a8a8;
+	border-style:solid;
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:12px;
+	margin-top:0;
+	margin-bottom:5px;
+
+}
+
+#sidebar {
+	display:none;
+	background-color:white;
+	width:220px;
+	height:100%;
+	padding:0;
+	opacity:0.4;
+	float:left;
+}
+
+#sidebar a:link {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:22px;
+	text-decoration:none;
+	padding-bottom:30px;
+}
+
+.link1.active {
+	background-color:404040;
+}
+
+.link1 {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:22px;
+	text-decoration:none;
+	margin-bottom:33px;
+	padding-left:30px;
+	padding-bottom:2px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.link2.active {
+	background-color:404040;
+}
+
+.link2 {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:22px;
+	text-decoration:none;
+	margin-bottom:33px;
+	padding-left:30px;
+	padding-bottom:2px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.link3 {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:22px;
+	text-decoration:none;
+	padding-left:30px;
+	padding-bottom:2px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.contact {
+	display:none;
+}
+
+#phone {
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	font-size:20px;
+	text-decoration:none;
+	padding-left:30px;
+	background-color:838383;
+	line-height:30px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#email {
+	font-family: "Roboto";
+	font-weight:100;
+	color:white;
+	font-size:13.8px;
+	text-decoration:none;
+	padding-left:30px;
+	background-color:949494;
+	line-height:30px;
+}
+
+
+.link3.active {
+	background-color:404040;
+}
+
+#linkwrap {
+	padding-top:85px;
+	width:220px;
+}
+
+#linkwrap #link {
+	margin-bottom:35px;
+	padding-left:30px;
+}
+
+#logo img {
+	width:220px;
+	bottom:0px;
+	position:absolute;
+	z-index: 100;
+	display:none;
+}
+
+#pagewrap {
+
+	padding:5px;
+	float:left;
+	margin-right:auto;
+	margin-left:auto;
+
+}
+
+#sounddesign {
+	background-color:646260;
+	padding:15px;
+	border-width:2px;
+	border-color:a8a8a8;
+	border-style:solid;
+	margin-bottom:6px;
+}
+
+#webdev {
+	background-color:646260;
+	padding:15px;
+	border-width:2px;
+	border-color:a8a8a8;
+	border-style:solid;
+	background:url('images/webdev.png');
+	background-size:cover;
+	background-position-x: right;
+}
+
+#titleright {
+	padding-top:5px;
+	padding-bottom:2px;
+	float:right;
+}
+
+
+#titleleft {
+	padding-top:5px;
+	padding-bottom:2px;
+	float:left;
+}
+
+#title p {
+	font-family: "Roboto";
+	font-weight:300;
+	color:eee;
+	font-size:30px;
+	margin:0;
+	line-height:0;
+}
+
+#blurb {
+	padding-top:7px;
+}
+
+#blurb p {
+	font-size:12px;
+	font-family: "Roboto";
+	font-weight:100;
+	color:eee;
+	text-align:justify;
+}
+
+#apwrap {
+	width:100%;
+	position:relative;
+}
+
+#ap {
+	height:97.2px;
+	width:100%;
+	position:relative;
+	margin:0 auto;
+	margin-bottom:40px;
+
+	border-width:2px;
+	border-color:323232;
+	border-style:solid;
+	background:url('images/vo_bg_processed.png');
+}
+
+.apBlink {
+	height:97.2px;
+	width:100%;
+	border-width:2px;
+	border-color:white;
+	border-style:solid;
+	display:none;
+	position:relative;
+	pointer-events:none;
+	z-index: 2;
+	margin-bottom:-101px;
+}
+
+.apBlink2 {
+	height:97.2px;
+	width:100%;
+	border-width:2px;
+	border-color:white;
+	border-style:solid;
+	display:none;
+	position:relative;
+	pointer-events:none;
+	z-index: 2;
+	margin-bottom:-101px;
+}
+
+
+#apSlider {
+	position:absolute;
+	height:97.2px;
+	width:87%;
+	margin-right:45px;
+}
+
+#apSlider .ui-slider-range-min {
+	height:97.2px;
+	width:100%;
+	background:url('images/vo_bg_unprocessed.png');
+	position:absolute;
+}
+
+#apSlider .ui-slider-handle {
+	width:55px;
+	height:97.2px;
+	background:url('images/ap_knob.png');
+	position:absolute;
+	outline:none;
+}
+
+#processed {
+	font-size:40px;
+	font-family: "Roboto";
+	font-weight:300;
+	color:white;
+	text-align:justify;
+	position: absolute;
+    z-index: 2;
+    bottom: -50px;
+    margin-left:370px;
+	pointer-events: none;
+
+	text-shadow: 2px 2px black;
+}
+
+#unprocessed {
+	position:relative;
+	margin-left:-44px;
+	bottom:-88px;
+	opacity:1;
+}
+
+#playpause button {
+	position: absolute;
+    z-index: 2;
+    bottom: 1;
+    margin-bottom:-28px;
+    margin-left:-8px;
+    background:none;
+    outline:none;
+    border:none;
+
+    font-family: "Roboto";
+	font-weight:200;
+	color:white;
+	font-size:30px;
+}
+
+#playpause2 button {
+	position: absolute;
+    z-index: 2;
+    bottom: 1;
+    margin-bottom:-28px;
+    margin-left:-8px;
+    background:none;
+    outline:none;
+    border:none;
+
+    font-family: "Roboto";
+	font-weight:200;
+	color:white;
+	font-size:30px;
+}
+
+
+#howto p {
+	position: absolute;
+    z-index: 2;
+    bottom: 1;
+    margin-bottom:-22px;
+    right:0;
+
+	font-family: "Roboto";
+	font-weight:200;
+	color:white;
+	font-size:10px;
+}
+
+#ap2 {
+	height:97.2px;
+	width:100%;
+	position:relative;
+	margin:0 auto;
+	margin-bottom:40px;
+
+	border-width:2px;
+	border-color:323232;
+	border-style:solid;
+	background:url('images/cb_bg_processed.png');
+}
+
+#apSlider2 {
+	position:absolute;
+	height:97.2px;
+	width:87%;
+	margin-right:45px;
+}
+
+#apSlider2 .ui-slider-range-min {
+	height:97.2px;
+	width:100%;
+	background:url('images/cb_bg_unprocessed.png');
+	position:absolute;
+}
+
+#apSlider2 .ui-slider-handle {
+	width:55px;
+	height:97.2px;
+	background:url('images/ap_knob.png');
+	position:absolute;
+	outline:none;
+}
+ 
