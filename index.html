@@ -3,6 +3,11 @@
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!--carousel-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -33,7 +38,7 @@
 
         <div id="header">
             <div id="myName">
-                <p>QUINTON URQUHART</p>
+                <a href=""><p>QUINTON URQUHART</p></a>
             </div>
 
             <div class="lightBottomBorder" style="width: 400px;"></div>
@@ -57,22 +62,36 @@
         <div id="designPage">
             <table>
                 <tr>
-                    <td>
-                        <image id="portfolioLeft" class="arrow" src="icons/arrow_left.png"></image>
+
+                    <td class="portfolioCarousel" style="width: 70vw;">
+                            <div>
+                                <image class="desktopView" src="icons/desktop_lot450.png"></image>
+                                <image class="mobileView" src="icons/smartphone_lot450.png"></image>
+                            </div>
+                            <div>
+                                <image class="desktopView" src="icons/desktop_lot450.png"></image>
+                                <image class="mobileView" src="icons/smartphone_lot450.png"></image>
+                            </div>
                     </td>
-                    <td>
-                        <image class="desktopView" src="icons/desktop_lot450.png"></image>
-                        <image class="mobileView" src="icons/smartphone_lot450.png"></image>
-                    </td>
-                    <td>
-                        <image id="portfolioRight" class="arrow" src="icons/arrow_right.png"></image>
-                    </td>
+
                 </tr>
             </table>
         </div>
 
 
     <script>
+
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        }
+
+        $(document).ready(function(){
+        $('.portfolioCarousel').slick({
+            prevArrow: "<img id='portfolioLeft' class='arrow a-left control-c prev slick-prev' src='icons/arrow_left.png'>",
+            nextArrow: "<img id='portfolioRight' class='arrow a-left control-c next slick-next' src='icons/arrow_right.png'>"
+        });
+        });
+
         var code = document.getElementById('typewriter');
 
         var typewriter = new Typewriter(code, {

@@ -21,8 +21,9 @@
 
 body {
     margin: 0;
-    margin:auto;
-
+	position: fixed;
+	left: 50%;
+    transform: translate(-50%, 0);
 }
 
 p {
@@ -32,6 +33,7 @@ p {
 
 a {
 	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
 }
 
 #myName {
@@ -223,6 +225,23 @@ a {
 	opacity: 0.6;
 }
 
+
+.portfolioCarousel{
+	margin:auto;
+}
+
+#portfolioLeft{
+	right:100px;
+	left: -48px;
+
+}
+
+#portfolioRight{
+	right: -45px;
+}
+
+
+
 #ideTitle p {
 	color: #686868;
 	pointer-events: none;
@@ -280,3 +299,4 @@ a {
 	overflow-y: scroll;
     margin-top: -38px;
 }
+
