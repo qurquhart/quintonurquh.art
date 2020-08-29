@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
-
 @media only screen and (max-height: 794px) {
     #devIcons {
         padding-top: 20px;
@@ -18,6 +16,8 @@
         }
     }
 
+
+html, body { height: 100vh }
 
 body {
     margin: 0;
@@ -47,7 +47,7 @@ a {
 	color: rgb(0, 0, 0);
 	font-size: 50px;
 	padding-top: 25px;
-	margin: 0px;
+	margin: 0;
 }
 
 .navbarSocial {
@@ -80,13 +80,13 @@ a {
 }
 
 #devIcons img {
-	height: 134px;
+	/* height: 134px; */
 	/* width: 100px;  Declare your value. Can be in relative units. */
 	display: inline-block;
 	vertical-align: top;
 
 	/* IE fix. */
-	*display: inline;
+	display: inline;
 	zoom: 1;
 
 	-webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
@@ -184,7 +184,7 @@ a {
 #designButton {
 	width: 61px;
 	margin: auto;
-	margin-bottom: -20;
+	margin-bottom: -20px;
 }
 
 #designButton img {
@@ -252,14 +252,14 @@ a {
 }
 
 #typewriter {
-	color: eee;
+	color: #eeeeee;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.2px;
 	padding-top: 10px;
 }
 
 .consoleText {
-	color: eee;
+	color: #eeeeee;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.2px;
 	line-height: 24px;
@@ -271,23 +271,23 @@ a {
     margin: auto;
 }
 
-#linecount {
+#lineCount {
 	color: #696969;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.2px;
 	float: left;
 	width: 60px;
-	background: #3d3d3d;
+	background-color: #3d3d3d;
 	border-right: solid;
 	border-width: 1px;
 	margin-right: 10px;
 	height: 359px;
 }
 
-#linecount p {
+#lineCount p {
 	padding-right: 18px;
 	text-align: right;
-	margin-top: 0px;
+	margin-top: 0;
 	padding-top: 11px;
 }
 

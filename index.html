@@ -2,12 +2,6 @@
 <html>
 
 <head>
-    <!--seo-->
-    <title>Portfolio of Quinton Urquhart</title>
-    <meta name="Description" content="Portfolio and skills, links to recent works, and social media profiles.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
@@ -17,17 +11,19 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="animations.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap">
+    
 </head>
 
 <body>
 
         <div id="programmingPage">
             <div id="devIcons">
-                <img class="devIconAnimate1" src="icons/htmlcss.png" alt="html-css">
-                <img class="devIconAnimate2" src="icons/sql.png" alt="sql">
-                <img class="devIconAnimate3" src="icons/python.png" alt="python">
-                <img class="devIconAnimate4" src="icons/js.png" alt="js">
-                <img class="devIconAnimate5" src="icons/flask.png" alt="flask">
+                <img class="devIconAnimate1" src="images/htmlcss.png" alt="html-css">
+                <img class="devIconAnimate2" src="images/sql.png" alt="sql">
+                <img class="devIconAnimate3" src="images/python.png" alt="python">
+                <img class="devIconAnimate4" src="images/js.png" alt="js">
+                <img class="devIconAnimate5" src="images/flask.png" alt="flask">
             </div>
 
             <div id="ideTitle">
@@ -51,17 +47,17 @@
             <div class="lightBottomBorder" style="width: 400px;"></div>
 
             <div class="navbarSocial">
-                <a href="tel:818-294-5731"><img src="icons/phone.png" alt="phone"></a>
+                <a href="tel:818-294-5731"><img src="images/phone.png" alt="phone"></a>
                 <a class="mailto-link" href="mailto:quintonurquhart@gmail.com" target="_blank"><img
-                        src="icons/email.png" alt="email"></a>
-                <a href="https://github.com/qurquhart" target="_blank"><img src="icons/github.png" alt="github"></a>
+                        src="images/email.png" alt="email"></a>
+                <a href="https://github.com/qurquhart" target="_blank"><img src="images/github.png" alt="github"></a>
                 <a href="https://www.linkedin.com/in/quinton-urquhart-a422b2191/" target="_blank"><img
-                        src="icons/linkedin.png" alt="linkedin"></a>
+                        src="images/linkedin.png" alt="linkedin"></a>
             </div>
 
             <div id="designButton">
                 <p>Portfolio</p>
-                <img class="arrowUp" src="icons/arrow_down.png" alt="arrow down">
+                <img class="arrowUp" src="images/arrow_down.png">
             </div>
 
         </div>
@@ -72,12 +68,12 @@
 
                     <td class="portfolioCarousel" style="width: 70vw;">
                             <div>
-                                <image class="desktopView" src="icons/desktop_lot450.png" alt="lot 450 desktop site"></image>
-                                <image class="mobileView" src="icons/smartphone_lot450.png" alt="lot 450 mobile site"></image>
+                                <image class="desktopView" src="images/desktop_lot450.png"></image>
+                                <image class="mobileView" src="images/smartphone_lot450.png"></image>
                             </div>
                             <div>
-                                <image class="desktopView" src="icons/desktop_lot450.png" alt="lot 450 desktop site"></image>
-                                <image class="mobileView" src="icons/smartphone_lot450.png" alt="lot 450 mobile site"></image>
+                                <image class="desktopView" src="images/desktop_lot450.png"></image>
+                                <image class="mobileView" src="images/smartphone_lot450.png"></image>
                             </div>
                     </td>
 
@@ -94,8 +90,8 @@
 
         $(document).ready(function(){
         $('.portfolioCarousel').slick({
-            prevArrow: "<img id='portfolioLeft' class='arrow a-left control-c prev slick-prev' src='icons/arrow_left.png' alt='arrow left'>",
-            nextArrow: "<img id='portfolioRight' class='arrow a-left control-c next slick-next' src='icons/arrow_right.png' alt='arrow right'>"
+            prevArrow: "<img id='portfolioLeft' class='arrow a-left control-c prev slick-prev' src='images/arrow_left.png'>",
+            nextArrow: "<img id='portfolioRight' class='arrow a-left control-c next slick-next' src='images/arrow_right.png'>"
         });
         });
 
@@ -125,7 +121,7 @@
             .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class=gray># I would love to create a website for you or your business.</div><br>')
             .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;developer.create(storefront, business, personal)<br><br>')
             .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="orange">if</div> client <div class="orange">is</div> interested:<br>')
-            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="purple">print</div>(<div class=green>”Send me an email!”</div>)<br><br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="purple">print</div>(<div class=green>Send me an email!</div>)<br><br>')
             .start();
 
 
