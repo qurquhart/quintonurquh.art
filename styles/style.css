@@ -643,6 +643,10 @@ a {
   padding-top: 10px;
 }
 
+#typewriterMobile {
+  display: none;
+}
+
 .consoleText {
   color: #eeeeee;
   font-family: 'Roboto', sans-serif;

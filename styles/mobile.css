@@ -1,1 +1,705 @@
-/* No CSS *//*# sourceMappingURL=mobile.css.map */
+.sorange {
+  -webkit-animation: oranger 1s forwards;
+          animation: oranger 1s forwards;
+  display: inline;
+}
+
+.orange {
+  -webkit-animation: oranger 0.5s forwards;
+          animation: oranger 0.5s forwards;
+  display: inline;
+}
+
+@-webkit-keyframes oranger {
+  0% {
+    color: eee;
+  }
+  30% {
+    color: eee;
+  }
+  31% {
+    color: orange;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes oranger {
+  0% {
+    color: eee;
+  }
+  30% {
+    color: eee;
+  }
+  31% {
+    color: orange;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+.purple {
+  -webkit-animation: purpler 0.5s forwards;
+          animation: purpler 0.5s forwards;
+  display: inline;
+}
+
+@-webkit-keyframes purpler {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #c08ece;
+  }
+  100% {
+    color: #c08ece;
+  }
+}
+
+@keyframes purpler {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #c08ece;
+  }
+  100% {
+    color: #c08ece;
+  }
+}
+
+.gray {
+  -webkit-animation: grayer 0.5s forwards;
+          animation: grayer 0.5s forwards;
+  display: inline;
+}
+
+@-webkit-keyframes grayer {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #979797;
+  }
+  100% {
+    color: #979797;
+  }
+}
+
+@keyframes grayer {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #979797;
+  }
+  100% {
+    color: #979797;
+  }
+}
+
+.green {
+  -webkit-animation: greener 0.5s forwards;
+          animation: greener 0.5s forwards;
+  display: inline;
+}
+
+@-webkit-keyframes greener {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #57975a;
+  }
+  100% {
+    color: #57975a;
+  }
+}
+
+@keyframes greener {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #57975a;
+  }
+  100% {
+    color: #57975a;
+  }
+}
+
+.red {
+  -webkit-animation: redder 0.5s forwards;
+          animation: redder 0.5s forwards;
+  display: inline;
+}
+
+@-webkit-keyframes redder {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #c23a3a;
+  }
+  100% {
+    color: #c23a3a;
+  }
+}
+
+@keyframes redder {
+  0% {
+    color: eee;
+  }
+  50% {
+    color: eee;
+  }
+  51% {
+    color: #c23a3a;
+  }
+  100% {
+    color: #c23a3a;
+  }
+}
+
+@-webkit-keyframes showHide {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showHide {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -584px;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -584px;
+  }
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: 100%;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    margin-top: 0%;
+  }
+  100% {
+    margin-top: 100%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  80% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  80% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+.devIconAnimate1 {
+  -webkit-animation: rotate 4s forwards;
+          animation: rotate 4s forwards;
+}
+
+.devIconAnimate2 {
+  -webkit-animation: rotate 5s forwards;
+          animation: rotate 5s forwards;
+}
+
+.devIconAnimate3 {
+  -webkit-animation: rotate 6s forwards;
+          animation: rotate 6s forwards;
+}
+
+.devIconAnimate4 {
+  -webkit-animation: rotate 7s forwards;
+          animation: rotate 7s forwards;
+}
+
+.devIconAnimate5 {
+  -webkit-animation: rotate 8s forwards;
+          animation: rotate 8s forwards;
+}
+
+@media only screen and (max-height: 794px) {
+  #devIcons {
+    padding-top: 20px;
+  }
+  body {
+    width: 85vw;
+  }
+}
+
+@media only screen and (min-height: 795px) {
+  #devIcons {
+    padding-top: 50px;
+  }
+  body {
+    width: 70vw;
+  }
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  position: fixed;
+  background: #2e2e2e;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  pointer-events: none;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+#myName {
+  /* animation: showHide 17s forwards; */
+  font-weight: 100;
+  width: 100vw;
+  margin: auto;
+}
+
+#myName a p {
+  color: black;
+  font-size: 30px;
+  padding-top: 7px;
+  margin: auto;
+  width: 360px;
+  text-align: center;
+}
+
+#header {
+  width: 100vw;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  border-top: solid;
+  border-top-color: #eeeeee;
+  border-top-width: 1px;
+}
+
+.navbarSocial {
+  margin: auto;
+  padding-top: 15px;
+  height: 35px;
+  padding-bottom: 15px;
+  /* animation: showHide 20.2s forwards;*/
+}
+
+.navbarSocial img {
+  height: 35px;
+  opacity: .7;
+}
+
+.navbarSocial img:hover {
+  height: 35px;
+  opacity: 1;
+}
+
+.navbarSocial {
+  width: 250px;
+  text-align: justify;
+  z-index: -1;
+}
+
+.navbarSocial:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+
+#devIcons img {
+  /* height: 134px; */
+  /* width: 100px;  Declare your value. Can be in relative units. */
+  display: inline-block;
+  vertical-align: top;
+  height: 19vw;
+  /* IE fix. */
+  display: inline;
+  zoom: 1;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+#devIcons {
+  width: 96vw;
+  text-align: justify;
+  z-index: -1;
+  padding: 10px;
+  height: 105px;
+  background: white;
+}
+
+#devIcons:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+
+.dropShadow {
+  -webkit-filter: drop-shadow(5px 5px 25px rgba(82, 64, 64, 0.2));
+  filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
+}
+
+.lightBottomBorder {
+  border-bottom: solid 1px;
+  border-color: #eeeeee;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.mailto-link {
+  position: relative;
+  padding: 8px 0;
+}
+
+.mailto-message {
+  top: 1px;
+  left: 50%;
+  margin-bottom: -5px;
+  -webkit-transform: translate(-50%, -210%);
+          transform: translate(-50%, -210%);
+  position: absolute;
+  display: none;
+  width: auto;
+  white-space: nowrap;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #4f8bcd;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 2px;
+  opacity: 0.5;
+}
+
+.mailto-message:after {
+  content: '';
+}
+
+.mailto-link:hover .mailto-message,
+.mailto-link:focus .mailto-message,
+.mailto-link:focus-within .mailto-message {
+  display: block;
+}
+
+#designPage {
+  opacity: 0;
+  z-index: -2;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#designPage table {
+  margin: auto;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.desktopView {
+  float: left;
+  width: 74%;
+}
+
+.mobileView {
+  float: left;
+  width: 26%;
+}
+
+#designButton {
+  width: 61px;
+  height: 61px;
+  margin: auto;
+  display: none;
+}
+
+#designButton img {
+  margin: auto;
+  padding-left: 2px;
+  padding-top: 7px;
+  -webkit-animation: fadeIn 3s forwards;
+          animation: fadeIn 3s forwards;
+}
+
+#designButton p {
+  padding-top: 15px;
+  -webkit-animation: fadeIn 3s forwards;
+          animation: fadeIn 3s forwards;
+}
+
+#designButton:hover {
+  opacity: 0.6;
+}
+
+#designButton p {
+  margin: 0;
+  margin-top: 2px;
+}
+
+.arrowUp {
+  width: 55px;
+  padding-bottom: 2px;
+}
+
+.arrow {
+  width: 35.75px;
+  height: 125px;
+  padding: 5px;
+  margin-top: -60px;
+  opacity: 0.4;
+}
+
+.arrow:hover {
+  opacity: 0.6;
+}
+
+.portfolioCarousel {
+  margin: auto;
+}
+
+#portfolioLeft {
+  right: 100px;
+  left: -48px;
+}
+
+#portfolioRight {
+  right: -45px;
+}
+
+#ideTitle {
+  color: #424242;
+  background: #d4d4d4;
+  pointer-events: none;
+  padding-left: 5px;
+  position: relative;
+  z-index: 1;
+  height: 17px;
+  top: -17px;
+  display: none;
+}
+
+#typewriter {
+  display: none;
+}
+
+#typewriterMobile {
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.2px;
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.consoleText {
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+#programmingPage {
+  width: 750px;
+  margin: auto;
+  height: 70vh;
+  margin-bottom: -120px;
+}
+
+#lineCount {
+  display: none;
+}
+
+#lineCount p {
+  padding-right: 18px;
+  text-align: right;
+  margin-top: 0;
+  padding-top: 11px;
+}
+
+#ideText {
+  background: #2e2e2e;
+  border-top: #d4d4d4;
+  border-top-width: 27px;
+  overflow-y: scroll;
+  margin-top: -38px;
+  height: 60vh;
+}
+/*# sourceMappingURL=mobile.css.map */

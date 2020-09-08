@@ -16,11 +16,9 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-
-    
-    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="mobile.css" />
-
+    <!--stylesheets-->
+    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="./styles/style.css" />
+    <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="./styles/mobile.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap">
 
 </head>
@@ -46,6 +44,7 @@
                         </p>
                     </div>
                     <div id="typewriter"></div>
+                    <div id="typewriterMobile"></div>
                 </div>
             </div>
         </main>
@@ -107,6 +106,36 @@
             nextArrow: "<img id='portfolioRight' class='arrow a-left control-c next slick-next' src='images/arrow_right.webp' alt='arrow right'>"
         });
         });
+
+        var codeMobile = document.getElementById('typewriterMobile');
+
+        var typewriterMobile = new Typewriter(codeMobile, {
+            loop: false,
+            delay: 35,
+        });
+
+        typewriterMobile
+            .typeString('<div class="sorange">import</div> quinton_urquhart <div class="orange">as</div> developer<br><br><br>')
+            .pauseFor(0)
+            .typeString('experience = [<div class="green">"HTML-CSS"</div><div class="orange">,</div> ')
+            .pauseFor(500)
+            .typeString('<div class="green">"SQL"</div><div class="orange">,</div>')
+            .pauseFor(300)
+            .typeString('<div class="green" >"Python"</div><div class="orange">,</div><br>')
+            .pauseFor(100)
+            .typeString('<div class="green" style="padding-left:100px;">"JavaScript"</div>')
+            .pauseFor(350)
+            .typeString('<div class="orange">,</div> <div class="green">"Flask"</div>]<br><br>')
+            .pauseFor(500)
+            .typeString('client&nbsp;=&nbsp;<div class=green>"Your name here."</div><br><br>')
+            .typeString('<div class=gray># nice to meet you!</div><br>')
+            .typeString('<div class="orange">for</div> client <div class="orange">in</div> webdev:<br><br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class=gray># I\'d love to create your website!</div><br>')
+            
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="orange">if</div> client <div class="orange">is</div> interested:<br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="purple">print</div>(<div class=green>Send me an email!</div>)<br><br>')
+            .start();
+
 
         var code = document.getElementById('typewriter');
 
