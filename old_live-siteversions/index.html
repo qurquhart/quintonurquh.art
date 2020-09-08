@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <!--carousel-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="animations.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+        <div id="programmingPage">
+            <div id="devIcons">
+                <img class="devIconAnimate1" src="images/htmlcss.png" alt="html-css">
+                <img class="devIconAnimate2" src="images/sql.png" alt="sql">
+                <img class="devIconAnimate3" src="images/python.png" alt="python">
+                <img class="devIconAnimate4" src="images/js.png" alt="js">
+                <img class="devIconAnimate5" src="images/flask.png" alt="flask">
+            </div>
+
+            <div id="ideTitle">
+                <p>quintonurquhart.exe</p>
+            </div>
+
+            <div id="ideText" class="dropShadow">
+                <div id="lineCount">
+                    <p>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>
+                    </p>
+                </div>
+                <div id="typewriter"></div>
+            </div>
+        </div>
+
+        <div id="header">
+            <div id="myName">
+                <a href=""><p>QUINTON URQUHART</p></a>
+            </div>
+
+            <div class="lightBottomBorder" style="width: 400px;"></div>
+
+            <div class="navbarSocial">
+                <a href="tel:818-294-5731"><img src="images/phone.png" alt="phone"></a>
+                <a class="mailto-link" href="mailto:quintonurquhart@gmail.com" target="_blank"><img
+                        src="images/email.png" alt="email"></a>
+                <a href="https://github.com/qurquhart" target="_blank"><img src="images/github.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/quinton-urquhart-a422b2191/" target="_blank"><img
+                        src="images/linkedin.png" alt="linkedin"></a>
+            </div>
+
+            <div id="designButton">
+                <p>Portfolio</p>
+                <img class="arrowUp" src="images/arrow_down.png">
+            </div>
+
+        </div>
+        
+        <div id="designPage">
+            <table>
+                <tr>
+
+                    <td class="portfolioCarousel" style="width: 70vw;">
+                            <div>
+                                <image class="desktopView" src="images/desktop_lot450.png"></image>
+                                <image class="mobileView" src="images/smartphone_lot450.png"></image>
+                            </div>
+                            <div>
+                                <image class="desktopView" src="images/desktop_lot450.png"></image>
+                                <image class="mobileView" src="images/smartphone_lot450.png"></image>
+                            </div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+
+
+    <script>
+
+        window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+        }
+
+        $(document).ready(function(){
+        $('.portfolioCarousel').slick({
+            prevArrow: "<img id='portfolioLeft' class='arrow a-left control-c prev slick-prev' src='images/arrow_left.png'>",
+            nextArrow: "<img id='portfolioRight' class='arrow a-left control-c next slick-next' src='images/arrow_right.png'>"
+        });
+        });
+
+        var code = document.getElementById('typewriter');
+
+        var typewriter = new Typewriter(code, {
+            loop: false,
+            delay: 35,
+        });
+
+        typewriter
+            .typeString('<div class="sorange">import</div> quinton_urquhart <div class="orange">as</div> developer<br><br><br>')
+            .pauseFor(0)
+            .typeString('experience = [<div class="green">"HTML-CSS"</div><div class="orange">,</div> ')
+            .pauseFor(500)
+            .typeString('<div class="green">"SQL"</div><div class="orange">,</div> ')
+            .pauseFor(300)
+            .typeString('<div class="green">"Python"</div><div class="orange">,</div> ')
+            .pauseFor(100)
+            .typeString('<div class="green">"JavaScript"</div>')
+            .pauseFor(350)
+            .typeString('<div class="orange">,</div> <div class="green">"Flask"</div>]<br><br>')
+            .pauseFor(500)
+            .typeString('client&nbsp;=&nbsp;<div class=green>"Your name here."</div><br><br>')
+            .typeString('<div class=gray># nice to meet you!</div><br>')
+            .typeString('<div class="orange">for</div> client <div class="orange">in</div> webdev:<br><br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class=gray># I would love to create a website for you or your business.</div><br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;developer.create(storefront, business, personal)<br><br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="orange">if</div> client <div class="orange">is</div> interested:<br>')
+            .typeString('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="purple">print</div>(<div class=green>Send me an email!</div>)<br><br>')
+            .start();
+
+
+        $(document).ready(function () {
+
+            // Add class to mailto link
+            // Needed to separate the disabling of the default action AND copy email to clipboard
+            $('a[href^=mailto]').addClass('mailto-link');
+
+            var mailto = $('.mailto-link');
+            var messageCopy = 'click to copy email address';
+            var messageSuccess = 'copied to clipboard';
+
+            mailto.append('<span class="mailto-message"></span>');
+            $('.mailto-message').append(messageCopy);
+
+            // Disable default action (opening your email client. yuk.)
+            $('a[href^=mailto]').click(function () {
+                return false;
+            })
+
+            // On click, get href and remove 'mailto:'
+            // Store email address in a variable.
+            mailto.click(function () {
+                var href = $(this).attr('href');
+                var email = href.replace('mailto:', '');
+                copyToClipboard(email);
+                $('.mailto-message').empty().append(messageSuccess);
+                setTimeout(function () {
+                    $('.mailto-message').empty().append(messageCopy);
+                }, 2000);
+            });
+
+        });
+
+        // Grabbed this from Stack Overflow.
+        // Copies the email variable to clipboard
+        function copyToClipboard(text) {
+            var dummy = document.createElement("input");
+            document.body.appendChild(dummy);
+            dummy.setAttribute('value', text);
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+        }
+
+
+
+
+        $('#designButton').click(function () {
+            var offsetHeight = document.getElementById('programmingPage').offsetHeight;
+            
+            $('#programmingPage').css({
+                'transform': 'translate(0, -100%)',
+                'transition': '-webkit-transform 1.8s ease',
+            });
+
+            $('#header').css({
+                'transform': `translate(0, -${offsetHeight}px)`,
+                'transition': '-webkit-transform 1.8s ease',
+            });
+
+            $('#designPage').css({
+                'animation': 'fadeIn2 6s forwards',
+                'transform': 'translate(0, -584px)',
+                'transition': '-webkit-transform 1.8s ease',
+            });
+            $('#designButton').css({
+                'animation': 'fadeOut 1s forwards',
+            });
+        });
+    </script>
+
+</body>
+
+</html>

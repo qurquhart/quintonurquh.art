@@ -1,0 +1,215 @@
+.sorange {
+	animation: oranger 1s forwards;
+	display: inline;
+}
+
+.orange {
+	animation: oranger 0.5s forwards;
+	display: inline;
+}
+
+@keyframes oranger {
+	0% {
+		color: eee;
+	}
+	30% {
+		color: eee;
+	}
+	31% {
+		color: orange;
+	}
+	100% {
+		color: orange;
+	}
+}
+
+.purple {
+	animation: purpler 0.5s forwards;
+	display: inline;
+}
+
+@keyframes purpler {
+	0% {
+		color: eee;
+	}
+	50% {
+		color: eee;
+	}
+	51% {
+		color: #c08ece;
+	}
+	100% {
+		color: #c08ece;
+	}
+}
+
+.gray {
+	animation: grayer 0.5s forwards;
+	display: inline;
+}
+
+@keyframes grayer {
+	0% {
+		color: eee;
+	}
+	50% {
+		color: eee;
+	}
+	51% {
+		color: #979797;
+	}
+	100% {
+		color: #979797;
+	}
+}
+
+.green {
+	animation: greener 0.5s forwards;
+	display: inline;
+}
+
+@keyframes greener {
+	0% {
+		color: eee;
+	}
+	50% {
+		color: eee;
+	}
+	51% {
+		color: #57975a;
+	}
+	100% {
+		color: #57975a;
+	}
+}
+
+.red {
+	animation: redder 0.5s forwards;
+	display: inline;
+}
+
+@keyframes redder {
+	0% {
+		color: eee;
+	}
+	50% {
+		color: eee;
+	}
+	51% {
+		color: #c23a3a;
+	}
+	100% {
+		color: #c23a3a;
+	}
+}
+
+@keyframes showHide {
+	0% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn2 {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	60% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	20% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		margin-top: 0px;
+	}
+
+	100% {
+		margin-top: -584px;
+	}
+}
+
+@keyframes slideDown {
+	0% {
+		margin-top: 0%;
+	}
+	100% {
+		margin-top: 100%;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotateY(90deg);
+	}
+
+	80% {
+		transform: rotateY(90deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+.devIconAnimate1 {
+	animation: rotate 4s forwards;
+}
+
+.devIconAnimate2 {
+	animation: rotate 5s forwards;
+}
+
+.devIconAnimate3 {
+	animation: rotate 6s forwards;
+}
+
+.devIconAnimate4 {
+	animation: rotate 7s forwards;
+}
+
+.devIconAnimate5 {
+	animation: rotate 8s forwards;
+}

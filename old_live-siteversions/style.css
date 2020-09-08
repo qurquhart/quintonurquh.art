@@ -1,4 +1,4 @@
-@import './animations';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
 
 @media only screen and (max-height: 794px) {
     #devIcons {
@@ -19,12 +19,11 @@
     }
 
 
-html, body { height: 100vh }
-
 body {
     margin: 0;
-    position: fixed;
-    background:#2e2e2e;
+	position: fixed;
+	left: 50%;
+    transform: translate(-50%, 0);
 }
 
 p {
@@ -40,35 +39,20 @@ a {
 #myName {
 	/* animation: showHide 17s forwards; */
 	font-weight: 100;
-    width:100vw;
-    margin:auto;
+	margin: auto;
+	width: 483px;
 }
 
-#myName a p {
+#myName p {
 	color: rgb(0, 0, 0);
-	font-size: 30px;
-	padding-top: 7px;
-    margin: auto;
-    width:360px;
-    text-align: center;
-}
-
-#header {
-    width:100vw;
-    margin:auto;
-    position:fixed;
-    bottom:0;
-    background:white;
-    border-top:solid;
-    border-top-color: #eeeeee;
-    border-top-width: 1px;
+	font-size: 50px;
+	padding-top: 25px;
+	margin: 0px;
 }
 
 .navbarSocial {
 	margin: auto;
-    padding-top: 15px;
-    height:35px;
-    padding-bottom: 15px;
+	padding-top: 15px;
 	/* animation: showHide 20.2s forwards;*/
 }
 
@@ -96,14 +80,13 @@ a {
 }
 
 #devIcons img {
-	/* height: 134px; */
+	height: 134px;
 	/* width: 100px;  Declare your value. Can be in relative units. */
 	display: inline-block;
 	vertical-align: top;
 
-    height:19vw;
 	/* IE fix. */
-	display: inline;
+	*display: inline;
 	zoom: 1;
 
 	-webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
@@ -113,12 +96,9 @@ a {
 }
 
 #devIcons {
-	width: 96vw;
+	width: 748px;
 	text-align: justify;
-    z-index: -1;
-    padding:10px;
-    height:105px;
-    background:white;
+	z-index: -1;
 }
 
 #devIcons:after {
@@ -136,7 +116,7 @@ a {
 
 .lightBottomBorder {
 	border-bottom: solid 1px;
-	border-color: #eeeeee;
+	border-color: eee;
 	padding-top: 5px;
 
 	margin: auto;
@@ -175,14 +155,14 @@ a {
 	display: block;
 }
 
-#designPage * {
+#designPage {
 	opacity: 0;
     z-index: -2;
     right:0;
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    display:none;
+
 }
 
 #designPage table {
@@ -203,9 +183,8 @@ a {
 
 #designButton {
 	width: 61px;
-	height: 61px;
-    margin: auto;
-    display:none;
+	margin: auto;
+	margin-bottom: -20;
 }
 
 #designButton img {
@@ -235,8 +214,8 @@ a {
 }
 
 .arrow {
-    width: 35.75px;
-    height:125px;
+    width: 35px;
+    height:205px;
 	padding: 5px;
 	margin-top: -60px;
 	opacity: 0.4;
@@ -263,32 +242,24 @@ a {
 
 
 
-#ideTitle {
-    color: #424242;
-	background:#d4d4d4;
+#ideTitle p {
+	color: #686868;
 	pointer-events: none;
 	padding-left: 5px;
 	position: relative;
 	z-index: 1;
-    height: 17px;
-    top:-17px;
-    display:none;
+	height: 17px;
 }
 
-#typewriter {  
-    display: none;
-}
-
-#typewriterMobile {
-	color: #eeeeee;
+#typewriter {
+	color: eee;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.2px;
-    padding-top: 10px;
-    padding-left:8px;
+	padding-top: 10px;
 }
 
 .consoleText {
-	color: #eeeeee;
+	color: eee;
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 1.2px;
 	line-height: 24px;
@@ -298,27 +269,34 @@ a {
 #programmingPage {
 	width: 750px;
     margin: auto;
-    height:70vh;
-    margin-bottom:-120px;
 }
 
-#lineCount {
-	display:none;
+#linecount {
+	color: #696969;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1.2px;
+	float: left;
+	width: 60px;
+	background: #3d3d3d;
+	border-right: solid;
+	border-width: 1px;
+	margin-right: 10px;
+	height: 359px;
 }
 
-#lineCount p {
+#linecount p {
 	padding-right: 18px;
 	text-align: right;
-	margin-top: 0;
+	margin-top: 0px;
 	padding-top: 11px;
 }
 
 #ideText {
 	background: #2e2e2e;
-	border-top: #d4d4d4;
+	border: #d4d4d4;
+	border-style: solid;
 	border-top-width: 27px;
 	overflow-y: scroll;
     margin-top: -38px;
-    height:60vh;
 }
 
